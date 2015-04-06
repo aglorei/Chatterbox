@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dojo Chatroom</title>
+	<!-- Latest compiled and minified jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<!-- socket.io link -->
+	<script src="/socket.io/socket.io.js"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+	<script src="/javascripts/main.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h3>User Dashboard</h3>
+
+				<div id="username-group" class="form-group">
+					<label for="name">Name:</label>
+					<input id="username-input" class="form-control" type="text" name="name" />
+					<small class="text-muted">Press enter to submit</small>
+				</div>
+			</div>
+			<div class="col-md-8 chatbox">
+				<h3>Chatroom</h3>
+
+				<div id="messages" class="form-control">
+					<p class="text-primary">There are currently <span id="usercount"></span> users in this chatroom.</p>
+				</div>
+
+				<div id="message-group" class="form-group">
+					<label>Type message here:</label>
+					<input id="message-input" class="form-control" type="text">
+					<small class="text-muted">Press enter to submit</small>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
